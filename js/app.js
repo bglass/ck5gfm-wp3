@@ -85,6 +85,7 @@ ClassicEditor
 	} )
 	.then( ( editor ) => {
 		window.editor = editor;
+		window.editor.setData( 'This is **bold** and *italic*.' );
 	} )
 	.catch( ( err ) => {
 		console.error( err.stack );
